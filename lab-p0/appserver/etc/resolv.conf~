@@ -1,0 +1,4 @@
+#domain localdomain
+#nameserver w.x.y.z
+nameserver 15.3.0.100
+

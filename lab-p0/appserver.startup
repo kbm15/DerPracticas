@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Starting apache..."
+/etc/init.d/apahe2 start

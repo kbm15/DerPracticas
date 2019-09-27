@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Filtering with iptables..."
+iptables -t filter -F
