@@ -1,0 +1,45 @@
+<nodes>
+position(833.0,341.0); NKCompaq("pc2")
+position(164.0,344.0); NKCompaq("pc1")
+position(111.0,192.0); NKCompaq("dnsemp1")
+position(628.0,199.10132581530019); NKHub("hub1")
+position(470.0,200.0); NKRouter("r1")
+position(303.0,200.10132581530019); NKHub("hub2")
+position(640.8754207727998,-43.79734836939963); NKCompaq("dnsroot1")
+position(791.0,45.0); NKCompaq("dnscom")
+position(794.0,197.0); NKCompaq("dnsemp2")
+<\nodes>
+<connections>
+<link>
+Connect("pc1")
+To("hub2")
+<\link>
+<link>
+Connect("hub2")
+To("dnsemp1")
+<\link>
+<link>
+Connect("hub2")
+To("r1")
+<\link>
+<link>
+Connect("r1")
+To("hub1")
+<\link>
+<link>
+Connect("hub1")
+To("dnsroot1")
+<\link>
+<link>
+Connect("hub1")
+To("dnscom")
+<\link>
+<link>
+Connect("hub1")
+To("dnsemp2")
+<\link>
+<link>
+Connect("hub1")
+To("pc2")
+<\link>
+<\connections>
